@@ -1,51 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="./style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Interactive card details form</title>
+  <title>Frontend Mentor | Credit Card Details</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+ 
+  <div class="container">
+    <div class="color-bg">
+        
+        <div class="card-front">
+            <img src="./images/card-logo.svg" alt="">
+            <div class="infor">
+                <span>1234 5678 9123 429</span>
+                <div class="inPer">
+                    <p>Joshua Famiroju</p>
+                    <p>10/2025</p>
+                </div>
+            </div>
+        </div>
+        <div class="card-back">
 
-  0000 0000 0000 0000
-  Jane Appleseed
-  00/00
+        </div>
+    </div>
 
-  000
+    <div class="white-bg">
+        <div class="form">
+            <form action="">
+                <div class="input-box">
+                    <label for="">CARDHOLDER NAME</label>
+                    <input type="text" id="cdName" >
+                    <small id="sm1">Please Input Something</small>
+                </div>
+                <div class="input-box">
+                    <label for="">CARD NUMBER</label>
+                    <input type="text" id="cdNum">
+                    <small id="forNum"> Please Input Something</small>
+                </div>
+                <div class="input-boxe">
+                    <div class="datCH">
+                        <label for="">EXP. DATE (MM/YY)</label>
+                        <div class="dateINp">
+                            <div class="sm1">
+                                <input type="text" id="month" placeholder="MM">
+                                <small id="sm2">Please Input Something</small>
+                            </div>
+                            <div class="sm2">
+                                <input type="text" id="year" placeholder="YY">
+                                <small id="sm4">Please Input Something</small>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="cvcINP">
+                        <label for="">CVC</label>
+                        <input type="text" id="cvc" placeholder="e.g. 123">
+                        <small id="sm3">Can't be blank</small>
+                    </div>
 
-  Cardholder Name
-  e.g. Jane Appleseed
+                </div>
+                <button id="confr" type="button">Confirm</button>
 
-  Card Number
-  e.g. 1234 5678 9123 0000
+            </form>
+            
+        </div>
+        <div id="next"  >
+            <img src="./images/icon-complete.svg" alt="" srcset="">
+            <h2> Thank you!</h2>
+            <h3>We've added your card details</h3>
+            <button id="contu">Continue</button>
+        </div>
+        
+    </div>
+</div>
 
-  Exp. Date (MM/YY)
-  MM
-  YY
-
-  CVC
-  e.g. 123
-
-  Confirm
-
-  <!-- Completed state start -->
-
-  Thank you!
-  We've added your card details
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+<script src="./script.js"></script>
 </body>
 </html>

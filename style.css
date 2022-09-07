@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-size:18px;
+    font-family: 'Space Grotesk', sans-serif;
+
+}
+.container{
+    width:100%;
+    height:100vh;
+    display: flex;
+
+}
+.color-bg{
+    height: 100vh;
+    width:35%;
+    background-image: url('./images/bg-main-desktop.png');
+    background-size: cover;
+}
+.form{
+    position: absolute;
+    top: 80%;
+    left:80%;
+    transform: translate(-80%,-80%);
+    height: 60vh;
+    width: 28%;
+    
+}
+#next{
+    position: absolute;
+    top: 70%;
+    left:70%;
+    transform: translate(-70%,-70%);
+    height: 60vh;
+    width: 28%;
+    text-align: center;
+    display: none;
+}
+#next h2{
+    font-size: 2em;
+    margin: 20px 0px ;
+    color: hsl(278, 41%, 23%);
+}
+#next h3{
+    font-size: 1.1em;
+    margin: 0px 0px 15px ;
+    color: gray;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap:23px;
+}
+.input-box{
+    display: flex;
+    flex-direction: column;
+    gap:10px
+}
+.input-boxe{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin:10px 0px;
+
+}
+.cvcINP{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    width:50%;
+}
+.datCH{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    width:100%;
+}
+
+.input-box input{
+    width: 90%;
+    height: 50px;
+    
+}
+
+.datCH input{
+    width: 40%;
+    height: 50px;
+
+}
+
+.cvcINP input{
+    width: 90%;
+    height: 50px;
+   
+    
+}
+
+button{
+    width: 90%;
+    border-radius: 10px;
+    height: 60px;
+    background-color: hsl(278, 41%, 23%);
+    color:white;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: .3s ease-in-out;
+}
+
+button:hover{
+   background-color: #180622;
+}
+
+input{
+    
+    border: none;
+    outline:none;
+    border:2px hsl(278, 41%, 23%) solid;
+    padding: 5px 0px 5px 10px;
+    border-radius: 10px;
+}
+input:focus{
+    border:3px hsl(278, 41%, 23%) solid;
+}
+input::placeholder{
+    color:gray;
+}
+.card-front{
+    width: 447px;
+    height: 245px;
+    position: absolute;
+    background-image: url('./images/bg-card-front.png');
+    background-size: cover;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    margin:140px  0px 0px 180px;
+    padding: 30px ;
+    box-shadow: gray 5px 5px 170px;
+}
+.infor{
+    
+    margin-top: 45px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+
+
+}
+.infor span{
+    font-size: 2em;
+    text-align: center;
+}
+.inPer{
+    display: flex;
+    justify-content: space-between;
+}
+.card-back{
+    box-shadow: rgb(92, 91, 91) 5px 5px 170px;
+    width: 447px;
+    height: 210px;
+    border-radius: 10px;
+    position: absolute;
+    background-image: url('./images/bg-card-back.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin:420px 0px 0px 290px;
+}
+label{
+    color: hsl(278, 41%, 23%);
+}
+
+.sm1,.sm2{
+    display: flex;
+    flex-direction: column;
+}
+small{
+    font-size: small;
+    color: red;
+    display: none;
+}
+
+.dateINp{
+    display: flex;
+
+}
+.dateINp input{
+    width: 80%;
+}
+@media screen and (max-width:800px){
+    /* .color-bg{
+        height: 100vh;
+        width:35%;
+        background-image: url('./images/colDs.png');
+        background-size: cover;
+        
+    } */
+    .container{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .color-bg{
+        width: 100%;
+        height: 35vh;
+        background-image: url(./images/bg-main-mobile.png);
+    }
+    .white-bg{
+        width: 100%;
+        height: 65vh;
+    }
+    .frCrd{
+        
+        margin:140px  180px 0px 20px ;
+        padding: 30px ;
+        box-shadow:none;
+        z-index: 3;
+    }
+    .bckCrd{
+        margin:20px   0px 0px 180px;
+        
+        box-shadow:  none;
+        z-index: 1;
+    }
+    .form{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        padding: 150px 0px 0px;
+    }
+    #next{
+        width: 90%;
+        padding: 180px 0px 0px;
+    }
+
+}
