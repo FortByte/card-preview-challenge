@@ -33,9 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live URL](https://fortbyte.github.io/card-preview-challenge/)
 
-## My process
 
 ### Built with
 
@@ -50,7 +49,7 @@ Users should be able to:
 
 - Website - [Joshua Famiroju](https://joshuafamiroju.netlify.app)
 - Frontend Mentor - [@ja-rrz](https://www.frontendmentor.io/profile/ja-rrz)
-- Twitter - [@yourusername](https://www.twitter.com/joshuafamiroju)
+- Twitter - [@joshuafamiroju](https://www.twitter.com/joshuafamiroju)
 
 ## Acknowledgments
 
